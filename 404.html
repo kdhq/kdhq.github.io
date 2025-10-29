@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+      // GitHub Pages SPA redirect
+      var path = window.location.pathname;
+      var search = window.location.search;
+      var hash = window.location.hash;
+      
+      if (path !== '/' && !path.includes('.')) {
+        // Hash mode redirect
+        window.location.replace('/#' + path + search + hash);
+      } else {
+        window.location.replace('/');
+      }
+    </script>
+  </head>
+  <body>
+    <p>Redirecting... Please wait.</p>
+    <noscript>
+      <h1>Page Not Found</h1>
+      <p>Please enable JavaScript or go back to <a href="/">homepage</a>.</p>
+    </noscript>
+  </body>
+</html>
